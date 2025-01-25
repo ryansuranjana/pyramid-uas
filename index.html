@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyramid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+              lato: ["Lato", "sans-serif"],
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      src="https://kit.fontawesome.com/46063fc6cf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="home">
+    <!-- header -->
+    <header
+      class="w-[90%] lg:w-[70%] m-auto py-8 flex justify-between items-center"
+    >
+      <div>
+        <h3 class="font-lato lg:text-2xl text-xl font-bold text-[#383838]">
+          Pyramid
+        </h3>
+      </div>
+      <nav class="hidden lg:block">
+        <ul class="flex flex-row space-x-8">
+          <li>
+            <a
+              href="#home"
+              class="font-inter text-[#8FA0AD] hover:text-[#383838] active:text-[#383838]"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="font-inter text-[#8FA0AD] hover:text-[#383838] active:text-[#383838]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="font-inter text-[#8FA0AD] hover:text-[#383838] active:text-[#383838]"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#pricing"
+              class="font-inter text-[#8FA0AD] hover:text-[#383838] active:text-[#383838]"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="font-inter text-[#8FA0AD] hover:text-[#383838] active:text-[#383838]"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <a
+          href="https://ryansuranjana.dev"
+          target="_blank"
+          class="px-6 py-4 border border-black rounded-lg border-[#383838] text-[#383838]"
+          >Let's Talk</a
+        >
+      </div>
+    </header>
+    <!-- header -->
+    <main>
+      <!-- hero section -->
+      <div
+        class="mt-14 w-[90%] m-auto flex flex-col lg:flex-row justify-evenly items-center"
+      >
+        <div>
+          <img
+            src="assets/weekly-growth.png"
+            alt="Weekly Growth"
+            class="w-[250px] hidden lg:block"
+          />
+        </div>
+        <div class="flex flex-col space-y-6 md:w-[50%] w-[90%]">
+          <p class="font-lato text-[#516371] text-center">Designing With Us</p>
+          <p
+            class="font-lato font-bold text-[#2D2D2D] text-center lg:text-[72px] md:text-[52px] text-[42px] text-center leading-tight"
+          >
+            The Beloved Design Company in Konoha
+          </p>
+          <p class="font-lato text-center text-sm md:text-base text-[#516371]">
+            With us achieving dreams in building your products, together say
+            "Yes" to extraordinary designs
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/client-trusted.png"
+            alt="Client Trusted"
+            class="w-[250px]"
+          />
+        </div>
+      </div>
+      <div class="w-[90%] m-auto mt-14 flex justify-center">
+        <ul
+          class="flex flex-row space-x-14 list-disc flex-wrap justify-center md:justify-start"
+        >
+          <li class="text-[#516371] text-xs md:text-base">UI/UX Design</li>
+          <li class="text-[#516371] text-xs md:text-base">Prototype</li>
+          <li class="text-[#516371] text-xs md:text-base">Web Design</li>
+          <li class="text-[#516371] text-xs md:text-base">Landing Page</li>
+          <li class="text-[#516371] text-xs md:text-base">Mobile Design</li>
+          <li class="text-[#516371] text-xs md:text-base">Development</li>
+        </ul>
+      </div>
+      <div class="relative">
+        <img src="assets/half-circle.png" alt="" class="absolute -z-10 -mt-4" />
+        <div class="w-full flex justify-center mt-14">
+          <a
+            href=""
+            class="bg-[#0041E8] text-white py-4 px-8 rounded-[30px] m-auto"
+            >Start a Project</a
+          >
+        </div>
+        <div class="w-full flex justify-center mt-8">
+          <ul class="flex flex-row space-x-4">
+            <li>
+              <a href="" class="p-2 rounded-full bg-white"
+                ><i class="fa-brands fa-dribbble text-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="" class="p-2 rounded-full bg-white"
+                ><i class="fa-brands fa-behance text-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="" class="p-2 rounded-full bg-white"
+                ><i class="fa-brands fa-instagram text-lg"></i
+              ></a>
+            </li>
+            <li>
+              <a href="" class="p-2 rounded-full bg-white"
+                ><i class="fa-brands fa-linkedin-in text-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-20 flex flex-row justify-center">
+          <div class="flex flex-col items-center space-y-8">
+            <p class="font-lato text-[#A7ABB6]">Trusted Partner</p>
+            <ul class="flex flex-row items-center space-x-20">
+              <li>
+                <img
+                  src="assets/microsoft.png"
+                  alt="microsoft"
+                  class="md:w-36 w-24"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/google-meet.png"
+                  alt="google-meet"
+                  class="md:w-36 w-24"
+                />
+              </li>
+              <li>
+                <img src="assets/zoom.png" alt="zoom" class="md:w-36 w-24" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- end hero section -->
+
+      <!-- about us -->
+      <section class="mt-28 md:w-[60%] w-[90%] m-auto" id="about">
+        <h3 class="font-lato text-[#516371] text-center text-2xl mb-12">
+          About Us
+        </h3>
+        <p class="text-[#A7ABB6] text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+          aperiam asperiores eius optio maiores nam dolorem obcaecati similique
+          voluptatum iusto quae perferendis repellat, eveniet ut vero facere
+          perspiciatis minus tempora! Ullam quidem doloribus aliquam assumenda
+          ratione adipisci necessitatibus ipsam aliquid deserunt sequi enim
+          possimus blanditiis nesciunt perferendis dignissimos omnis
+          reprehenderit facilis, veniam cumque eum quis voluptatibus, pariatur
+          iusto! Sit atque distinctio autem dolore repudiandae quisquam
+          excepturi soluta dignissimos non! Molestiae culpa itaque quos
+          praesentium, rerum mollitia distinctio dolor inventore ducimus alias,
+          consectetur illum provident voluptatem autem nihil iste ut, quam
+          harum. Quae cumque quibusdam perspiciatis eligendi commodi ea dolores
+          excepturi.
+        </p>
+      </section>
+      <!-- end about es -->
+
+      <!-- galeri -->
+      <section class="mt-28" id="projects">
+        <div class="md:w-[40%] w-[90%] m-auto">
+          <p class="text-[#A7ABB6] text-center font-lato">Project</p>
+          <h3 class="font-lato font-bold text-2xl text-center mt-4">
+            Success Project
+          </h3>
+          <p class="text-[#A7ABB6] text-center mt-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
+            nihil harum nobis ad provident nulla cum eum fugit dolores, sit
+            ipsam autem eius atque!
+          </p>
+        </div>
+
+        <section class="md:w-[70%] w-[90%] mt-8 m-auto">
+          <div
+            class="flex md:flex-row flex-col items-center md:items-start gap-x-6"
+          >
+            <div class="md:mb-0 mb-6">
+              <div class="relative">
+                <img
+                  src="assets/galeri-1.png"
+                  alt="Web Design"
+                  class="w-[500px] rounded-2xl"
+                />
+                <div class="absolute bottom-0 left-0">
+                  <div class="px-8 py-8 flex justify-between items-center">
+                    <div class="w-[60%]">
+                      <p class="text-white font-bold font-lato text-3xl mb-2">
+                        Web Design
+                      </p>
+                      <p class="text-[#D1D4DC] font-inte text-sm">
+                        Lörem ipsum astrobel sar direlig. Kronde est konfoni med
+                        kelig. Terabel pov astrobel sar
+                      </p>
+                    </div>
+                    <div>
+                      <a
+                        href=""
+                        class="px-8 py-4 text-white border border-white rounded-[28px]"
+                        >Let's work</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-6">
+              <div class="relative">
+                <img
+                  src="assets/galeri-2.png"
+                  alt="Website Design"
+                  class="w-[500px] rounded-2xl"
+                />
+                <div class="absolute bottom-0 left-0">
+                  <div class="px-8 py-8 flex justify-between items-center">
+                    <div class="w-[80%]">
+                      <p class="text-white font-bold font-lato text-xl mb-2">
+                        Website Design
+                      </p>
+                      <p class="text-[#D1D4DC] font-inte text-sm">
+                        Lörem ipsum astrobel sar direlig. Kronde est konfoni med
+                        kelig. Terabel pov astrobel sar
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <img
+                  src="assets/galeri-3.png"
+                  alt="Website Design"
+                  class="w-[500px] rounded-2xl"
+                />
+                <div class="absolute bottom-0 left-0">
+                  <div class="px-8 py-8 flex justify-between items-center">
+                    <div class="w-[80%]">
+                      <p class="text-white font-bold font-lato text-xl mb-2">
+                        Website Custom
+                      </p>
+                      <p class="text-[#D1D4DC] font-inte text-sm">
+                        Lörem ipsum astrobel sar direlig. Kronde est konfoni med
+                        kelig. Terabel pov astrobel sar
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex justify-center mt-14">
+            <a
+              href=""
+              class="bg-[#0041E8] text-white py-4 px-8 rounded-[30px] m-auto"
+              >View Our Project</a
+            >
+          </div>
+        </section>
+      </section>
+
+      <section class="mt-20">
+        <div
+          class="md:w-[70%] w-[90%] m-auto flex flex-row justify-between items-end"
+        >
+          <div class="w-[60%]">
+            <p class="font-lato text-[#A7ABB6]">Inspiration</p>
+            <p class="font-lato font-bold text-3xl mt-4">
+              UI Design Exploration
+            </p>
+            <p class="font-inter text-[#A7ABB6] mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              assumenda et magnam, neque quas accusantium veniam tenetur sunt
+              sint earum?
+            </p>
+          </div>
+
+          <div>
+            <a
+              href=""
+              class="bg-[#0041E8] text-white py-4 px-8 rounded-[30px] m-auto"
+              >View Our Project</a
+            >
+          </div>
+        </div>
+
+        <img src="assets/galeri-4.png" alt="Galeries" class="w-full mt-14" />
+      </section>
+      <!-- end galeri -->
+
+      <!-- Tabel -->
+      <section class="mt-20" id="pricing">
+        <h3 class="font-lato text-[#516371] text-center text-2xl">
+          Choose Plan
+        </h3>
+        <p
+          class="font-inter text-[#A7ABB6] mt-2 text-center m-auto md:w-[50%] w-[80%]"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          assumenda et magnam, neque quas accusantium veniam tenetur sunt sint
+          earum?
+        </p>
+
+        <table class="border-collapse mt-12 m-auto md:w-[70%] w-[90%]">
+          <thead>
+            <tr>
+              <th class="font-lato text-[#516371] text-left py-4">Plan</th>
+              <th class="font-lato text-[#516371] text-center py-4">Basic</th>
+              <th class="font-lato text-[#516371] text-center py-4">Pro</th>
+              <th class="font-lato text-[#516371] text-center py-4">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="font-lato text-[#516371] text-left py-4">Price</td>
+              <td class="font-lato text-[#516371] text-center py-4">$100</td>
+              <td class="font-lato text-[#516371] text-center py-4">$200</td>
+              <td class="font-lato text-[#516371] text-center py-4">$300</td>
+            </tr>
+            <tr class="border-t">
+              <td class="font-lato text-[#516371] text-left py-4">Feature</td>
+              <td class="font-lato text-[#516371] text-center py-4">10</td>
+              <td class="font-lato text-[#516371] text-center py-4">20</td>
+              <td class="font-lato text-[#516371] text-center py-4">30</td>
+            </tr>
+            <tr class="border-t">
+              <td class="font-lato text-[#516371] text-left py-4">Support</td>
+              <td class="font-lato text-[#516371] text-center py-4">24/7</td>
+              <td class="font-lato text-[#516371] text-center py-4">24/7</td>
+              <td class="font-lato text-[#516371] text-center py-4">24/7</td>
+            </tr>
+            <tr class="border-t">
+              <td class="font-lato text-[#516371] text-left py-4">Storage</td>
+              <td class="font-lato text-[#516371] text-center py-4">10GB</td>
+              <td class="font-lato text-[#516371] text-center py-4">20GB</td>
+              <td class="font-lato text-[#516371] text-center py-4">30GB</td>
+            </tr>
+            <tr class="border-t">
+              <td class="font-lato text-[#516371] text-left py-4">Domain</td>
+              <td class="font-lato text-[#516371] text-center py-4">1</td>
+              <td class="font-lato text-[#516371] text-center py-4">2</td>
+              <td class="font-lato text-[#516371] text-center py-4">3</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- End Tabel -->
+
+      <!-- Formulir -->
+      <section class="mt-20">
+        <div class="md:w-[70%] w-[90%] m-auto">
+          <h3 class="font-lato text-[#516371] text-2xl">Get In Touch</h3>
+          <p class="font-inter text-[#A7ABB6] mt-2 md:w-[50%] w-[80%]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            assumenda et magnam, neque quas accusantium veniam tenetur sunt sint
+            earum?
+          </p>
+        </div>
+
+        <div class="md:w-[70%] w-[90%] m-auto mt-8">
+          <form action="" class="flex flex-col space-y-6">
+            <div class="grid grid-cols-2 gap-x-6">
+              <div class="flex flex-col space-y-2">
+                <label for="name" class="font-lato text-[#516371]">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="border border-[#D1D4DC] rounded-lg px-4 py-2"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label for="email" class="font-lato text-[#516371]"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="border border-[#D1D4DC] rounded-lg px-4 py-2"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-x-6">
+              <div class="flex flex-col space-y-2">
+                <label for="password" class="font-lato text-[#516371]"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="border border-[#D1D4DC] rounded-lg px-4 py-2"
+                />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <label for="dob" class="font-lato text-[#516371]"
+                  >Date of Birth</label
+                >
+                <input
+                  type="date"
+                  name="dob"
+                  id="dob"
+                  class="border border-[#D1D4DC] rounded-lg px-4 py-2"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-x-6">
+              <div class="flex flex-col space-y-6">
+                <div class="flex flex-col space-y-2">
+                  <label for="gender" class="font-lato text-[#516371]"
+                    >Gender</label
+                  >
+                  <select
+                    name="gender"
+                    id="gender"
+                    class="border border-[#D1D4DC] rounded-lg px-4 py-2 text-[#516371]"
+                  >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="flex flex-col space-y-2">
+                  <label for="message" class="font-lato text-[#516371]"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="border border-[#D1D4DC] rounded-lg px-4 py-2"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="flex flex-col space-y-2">
+                <div
+                  class="w-full h-[200px] border border-dashed border-[#D1D4DC] rounded-lg px-4 py-2 flex justify-center items-center cursor-pointer"
+                  id="input-file"
+                >
+                  <p class="font-inter text-sm text-[#D1D4DC]" id="label-file">
+                    Upload File/Foto
+                  </p>
+                  <img
+                    src=""
+                    alt=""
+                    id="preview-img"
+                    class="w-full object-contain h-[180px] hidden"
+                  />
+                  <input type="file" class="hidden" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="bg-[#0041E8] text-white py-4 px-8 rounded-lg m-auto font-bold"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- end Formulir -->
+
+      <!-- Kontak Kami -->
+
+      <!-- end kontak kami -->
+
+      <!-- footer -->
+
+      <!-- footer -->
+
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
